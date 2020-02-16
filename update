@@ -1,0 +1,168 @@
+#!/bin/bash
+set -eo pipefail
+
+DISTRO_REPO="${DISTRO_REPO:=openhab/openhab-distro}"
+
+versions_json='versions.json'
+
+oh2_snapshot_distro_url='https://ci.openhab.org/job/openHAB-Distribution/lastSuccessfulBuild/artifact/distributions/openhab/target/openhab-${version}.zip'
+oh2_snapshot_addons_url='https://ci.openhab.org/job/openHAB-Distribution/lastSuccessfulBuild/artifact/distributions/openhab-addons/target/openhab-addons-${version}.kar'
+oh2_snapshot_legacy_addons_url='https://ci.openhab.org/job/openHAB-Distribution/lastSuccessfulBuild/artifact/distributions/openhab-addons-legacy/target/openhab-addons-legacy-${version}.kar'
+
+oh2_milestone_distro_url='https://openhab.jfrog.io/openhab/libs-milestone-local/org/openhab/distro/openhab/${version}/openhab-${version}.zip'
+oh2_milestone_addons_url='https://openhab.jfrog.io/openhab/libs-milestone-local/org/openhab/distro/openhab-addons/${version}/openhab-addons-${version}.kar'
+oh2_milestone_legacy_addons_url='https://openhab.jfrog.io/openhab/libs-milestone-local/org/openhab/distro/openhab-addons-legacy/${version}/openhab-addons-legacy-${version}.kar'
+
+oh2_stable_distro_url='https://bintray.com/openhab/mvn/download_file?file_path=org%2Fopenhab%2Fdistro%2Fopenhab%2F${version}%2Fopenhab-${version}.zip'
+oh2_stable_addons_url='https://bintray.com/openhab/mvn/download_file?file_path=org%2Fopenhab%2Fdistro%2Fopenhab-addons%2F${version}%2Fopenhab-addons-${version}.kar'
+oh2_stable_legacy_addons_url='https://bintray.com/openhab/mvn/download_file?file_path=org%2Fopenhab%2Fdistro%2Fopenhab-addons-legacy%2F${version}%2Fopenhab-addons-legacy-${version}.kar'
+
+oh3_snapshot_distro_url='https://ci.openhab.org/job/openHAB3-Distribution/lastSuccessfulBuild/artifact/distributions/openhab/target/openhab-${version}.zip'
+oh3_snapshot_addons_url='https://ci.openhab.org/job/openHAB3-Distribution/lastSuccessfulBuild/artifact/distributions/openhab-addons/target/openhab-addons-${version}.kar'
+
+oh3_milestone_distro_url=$oh2_milestone_distro_url
+oh3_milestone_addons_url=$oh2_milestone_addons_url
+
+oh3_stable_distro_url=$oh2_stable_distro_url
+oh3_stable_addons_url=$oh2_stable_addons_url
+
+oh_release_notes_url='https://github.com/openhab/openhab-distro/releases/tag/${version}'
+
+get_released_versions_from_tags() {
+	git ls-remote --refs --tags "git://github.com/${DISTRO_REPO}.git" | grep -E '.+/tags/[0-9]+\.[0-9]+\.[0-9]+(\.(M|RC)[0-9]+)?$' | sed -E 's#.+/tags/(.+)#\1#g' || echo ""
+}
+
+get_snapshot_versions_from_poms() {
+	local branch_names="$(git ls-remote --refs --heads "git://github.com/${DISTRO_REPO}.git" | grep -E '.+/heads/(main|2\.5\.x)$' | sed -E 's#.+/heads/(.+)#\1#g')"
+	for branch_name in $branch_names; do
+		curl -sS "https://raw.githubusercontent.com/${DISTRO_REPO}/${branch_name}/pom.xml" | grep -E '^    <version>' | grep 'SNAPSHOT' | sed -E 's#.+<version>(.+-SNAPSHOT)</version>#\1#g' || echo ""
+	done
+}
+
+get_versions() {
+	(get_released_versions_from_tags && get_snapshot_versions_from_poms) | sed -E 's/([0-9]+\.[0-9]+\.[0-9]+)$/\1\.RELEASE/g' | sort --unique --version-sort | sed 's/.RELEASE//g'
+}
+
+VERSIONS=$(get_versions)
+
+last_stable_version() {
+	grep -E '^[0-9]+\.[0-9]+\.[0-9]+$' <<< $VERSIONS | tail -n 1
+}
+
+add_version() {
+	echo "$version"
+
+	case $version in
+	2.*-SNAPSHOT)
+		download_url=$(eval "echo $oh2_snapshot_distro_url")
+		addons_url=$(eval "echo $oh2_snapshot_addons_url")
+		legacy_addons_url=$(eval "echo $oh2_snapshot_legacy_addons_url")
+		release_notes_url=""
+		;;
+	2.*.M*|2.*.RC*)
+		download_url=$(eval "echo $oh2_milestone_distro_url")
+		addons_url=$(eval "echo $oh2_milestone_addons_url")
+		legacy_addons_url=$(eval "echo $oh2_milestone_legacy_addons_url")
+		release_notes_url=""
+		;;
+	2.*)
+		download_url=$(eval "echo $oh2_stable_distro_url")
+		addons_url=$(eval "echo $oh2_stable_addons_url")
+		legacy_addons_url=$(eval "echo $oh2_stable_legacy_addons_url")
+		release_notes_url=$(eval "echo $oh_release_notes_url")
+		;;
+	3.*-SNAPSHOT)
+		download_url=$(eval "echo $oh3_snapshot_distro_url")
+		addons_url=$(eval "echo $oh3_snapshot_addons_url")
+		legacy_addons_url=""
+		release_notes_url=""
+		;;
+	3.*.M*|3.*.RC*)
+		download_url=$(eval "echo $oh3_milestone_distro_url")
+		addons_url=$(eval "echo $oh3_milestone_addons_url")
+		legacy_addons_url=""
+		release_notes_url=$(eval "echo $oh_release_notes_url")
+		;;
+	3.*)
+		download_url=$(eval "echo $oh3_stable_distro_url")
+		addons_url=$(eval "echo $oh3_stable_addons_url")
+		legacy_addons_url=""
+		release_notes_url=$(eval "echo $oh_release_notes_url")
+		;;
+	esac
+
+	case $version in
+	*.M*)
+		title="$(sed 's/.M/ Milestone /' <<< $version)"
+		category='milestone'
+		;;
+	*.RC*)
+		title="$(sed 's/.RC/ Release Candidate /' <<< $version)"
+		category='milestone'
+		;;
+	*-SNAPSHOT)
+		title="$(sed 's/-SNAPSHOT/ Snapshot/' <<< $version)"
+		category='snapshot'
+		;;
+	*)
+		title="$version Stable"
+		category='stable'
+		;;
+	esac
+
+	cat >> $versions_json <<-EOI
+		    {
+		        "version": "$version",
+		        "downloadUrl": "$download_url",
+		        "addonsUrl": "$addons_url",
+	EOI
+
+	if [ "$legacy_addons_url" != "" ]; then
+		cat >> $versions_json <<-EOI
+		        "legacyAddonsUrl": "$legacy_addons_url",
+		EOI
+	fi
+
+	if [ "$release_notes_url" != "" ]; then
+		cat >> $versions_json <<-EOI
+		        "releaseNotesUrl": "$release_notes_url",
+		EOI
+	fi
+
+	cat >> $versions_json <<-EOI
+	        "meta": {
+	EOI
+
+	if [ "$version" == "$(last_stable_version)" ]; then
+		cat >> $versions_json <<-EOI
+		            "default": true,
+		EOI
+	fi
+
+	cat >> $versions_json <<-EOI
+	            "title": "$title",
+	            "category": "$category",
+	            "displayOrder": "$display_order"
+	EOI
+
+
+	cat >> $versions_json <<-EOI
+	        }
+	    },
+	EOI
+}
+
+
+echo '[' > $versions_json
+
+display_order=0
+for version in $(get_versions)
+do
+	add_version
+	display_order=$((display_order+1))
+done
+
+sed -i 's/    /	/g' $versions_json
+sed -i '$d' $versions_json
+echo '	}' >> $versions_json
+echo ']' >> $versions_json
