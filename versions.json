@@ -1,0 +1,658 @@
+[
+	{
+		"version": "2.0.0.RC1",
+		"downloadUrl": "https://openhab.jfrog.io/openhab/libs-milestone-local/org/openhab/distro/openhab/2.0.0.RC1/openhab-2.0.0.RC1.zip",
+		"addonsUrl": "https://openhab.jfrog.io/openhab/libs-milestone-local/org/openhab/distro/openhab-addons/2.0.0.RC1/openhab-addons-2.0.0.RC1.kar",
+		"legacyAddonsUrl": "https://openhab.jfrog.io/openhab/libs-milestone-local/org/openhab/distro/openhab-addons-legacy/2.0.0.RC1/openhab-addons-legacy-2.0.0.RC1.kar",
+		"meta": {
+			"title": "2.0.0 Release Candidate 1",
+			"category": "milestone",
+			"displayOrder": "0"
+		}
+	},
+	{
+		"version": "2.0.0",
+		"downloadUrl": "https://bintray.com/openhab/mvn/download_file?file_path=org%2Fopenhab%2Fdistro%2Fopenhab%2F2.0.0%2Fopenhab-2.0.0.zip",
+		"addonsUrl": "https://bintray.com/openhab/mvn/download_file?file_path=org%2Fopenhab%2Fdistro%2Fopenhab-addons%2F2.0.0%2Fopenhab-addons-2.0.0.kar",
+		"legacyAddonsUrl": "https://bintray.com/openhab/mvn/download_file?file_path=org%2Fopenhab%2Fdistro%2Fopenhab-addons-legacy%2F2.0.0%2Fopenhab-addons-legacy-2.0.0.kar",
+		"releaseNotesUrl": "https://github.com/openhab/openhab-distro/releases/tag/2.0.0",
+		"meta": {
+			"title": "2.0.0 Stable",
+			"category": "stable",
+			"displayOrder": "1"
+		}
+	},
+	{
+		"version": "2.1.0",
+		"downloadUrl": "https://bintray.com/openhab/mvn/download_file?file_path=org%2Fopenhab%2Fdistro%2Fopenhab%2F2.1.0%2Fopenhab-2.1.0.zip",
+		"addonsUrl": "https://bintray.com/openhab/mvn/download_file?file_path=org%2Fopenhab%2Fdistro%2Fopenhab-addons%2F2.1.0%2Fopenhab-addons-2.1.0.kar",
+		"legacyAddonsUrl": "https://bintray.com/openhab/mvn/download_file?file_path=org%2Fopenhab%2Fdistro%2Fopenhab-addons-legacy%2F2.1.0%2Fopenhab-addons-legacy-2.1.0.kar",
+		"releaseNotesUrl": "https://github.com/openhab/openhab-distro/releases/tag/2.1.0",
+		"meta": {
+			"title": "2.1.0 Stable",
+			"category": "stable",
+			"displayOrder": "2"
+		}
+	},
+	{
+		"version": "2.2.0",
+		"downloadUrl": "https://bintray.com/openhab/mvn/download_file?file_path=org%2Fopenhab%2Fdistro%2Fopenhab%2F2.2.0%2Fopenhab-2.2.0.zip",
+		"addonsUrl": "https://bintray.com/openhab/mvn/download_file?file_path=org%2Fopenhab%2Fdistro%2Fopenhab-addons%2F2.2.0%2Fopenhab-addons-2.2.0.kar",
+		"legacyAddonsUrl": "https://bintray.com/openhab/mvn/download_file?file_path=org%2Fopenhab%2Fdistro%2Fopenhab-addons-legacy%2F2.2.0%2Fopenhab-addons-legacy-2.2.0.kar",
+		"releaseNotesUrl": "https://github.com/openhab/openhab-distro/releases/tag/2.2.0",
+		"meta": {
+			"title": "2.2.0 Stable",
+			"category": "stable",
+			"displayOrder": "3"
+		}
+	},
+	{
+		"version": "2.3.0.RC1",
+		"downloadUrl": "https://openhab.jfrog.io/openhab/libs-milestone-local/org/openhab/distro/openhab/2.3.0.RC1/openhab-2.3.0.RC1.zip",
+		"addonsUrl": "https://openhab.jfrog.io/openhab/libs-milestone-local/org/openhab/distro/openhab-addons/2.3.0.RC1/openhab-addons-2.3.0.RC1.kar",
+		"legacyAddonsUrl": "https://openhab.jfrog.io/openhab/libs-milestone-local/org/openhab/distro/openhab-addons-legacy/2.3.0.RC1/openhab-addons-legacy-2.3.0.RC1.kar",
+		"meta": {
+			"title": "2.3.0 Release Candidate 1",
+			"category": "milestone",
+			"displayOrder": "4"
+		}
+	},
+	{
+		"version": "2.3.0.RC2",
+		"downloadUrl": "https://openhab.jfrog.io/openhab/libs-milestone-local/org/openhab/distro/openhab/2.3.0.RC2/openhab-2.3.0.RC2.zip",
+		"addonsUrl": "https://openhab.jfrog.io/openhab/libs-milestone-local/org/openhab/distro/openhab-addons/2.3.0.RC2/openhab-addons-2.3.0.RC2.kar",
+		"legacyAddonsUrl": "https://openhab.jfrog.io/openhab/libs-milestone-local/org/openhab/distro/openhab-addons-legacy/2.3.0.RC2/openhab-addons-legacy-2.3.0.RC2.kar",
+		"meta": {
+			"title": "2.3.0 Release Candidate 2",
+			"category": "milestone",
+			"displayOrder": "5"
+		}
+	},
+	{
+		"version": "2.3.0",
+		"downloadUrl": "https://bintray.com/openhab/mvn/download_file?file_path=org%2Fopenhab%2Fdistro%2Fopenhab%2F2.3.0%2Fopenhab-2.3.0.zip",
+		"addonsUrl": "https://bintray.com/openhab/mvn/download_file?file_path=org%2Fopenhab%2Fdistro%2Fopenhab-addons%2F2.3.0%2Fopenhab-addons-2.3.0.kar",
+		"legacyAddonsUrl": "https://bintray.com/openhab/mvn/download_file?file_path=org%2Fopenhab%2Fdistro%2Fopenhab-addons-legacy%2F2.3.0%2Fopenhab-addons-legacy-2.3.0.kar",
+		"releaseNotesUrl": "https://github.com/openhab/openhab-distro/releases/tag/2.3.0",
+		"meta": {
+			"title": "2.3.0 Stable",
+			"category": "stable",
+			"displayOrder": "6"
+		}
+	},
+	{
+		"version": "2.4.0.M1",
+		"downloadUrl": "https://openhab.jfrog.io/openhab/libs-milestone-local/org/openhab/distro/openhab/2.4.0.M1/openhab-2.4.0.M1.zip",
+		"addonsUrl": "https://openhab.jfrog.io/openhab/libs-milestone-local/org/openhab/distro/openhab-addons/2.4.0.M1/openhab-addons-2.4.0.M1.kar",
+		"legacyAddonsUrl": "https://openhab.jfrog.io/openhab/libs-milestone-local/org/openhab/distro/openhab-addons-legacy/2.4.0.M1/openhab-addons-legacy-2.4.0.M1.kar",
+		"meta": {
+			"title": "2.4.0 Milestone 1",
+			"category": "milestone",
+			"displayOrder": "7"
+		}
+	},
+	{
+		"version": "2.4.0.M2",
+		"downloadUrl": "https://openhab.jfrog.io/openhab/libs-milestone-local/org/openhab/distro/openhab/2.4.0.M2/openhab-2.4.0.M2.zip",
+		"addonsUrl": "https://openhab.jfrog.io/openhab/libs-milestone-local/org/openhab/distro/openhab-addons/2.4.0.M2/openhab-addons-2.4.0.M2.kar",
+		"legacyAddonsUrl": "https://openhab.jfrog.io/openhab/libs-milestone-local/org/openhab/distro/openhab-addons-legacy/2.4.0.M2/openhab-addons-legacy-2.4.0.M2.kar",
+		"meta": {
+			"title": "2.4.0 Milestone 2",
+			"category": "milestone",
+			"displayOrder": "8"
+		}
+	},
+	{
+		"version": "2.4.0.M3",
+		"downloadUrl": "https://openhab.jfrog.io/openhab/libs-milestone-local/org/openhab/distro/openhab/2.4.0.M3/openhab-2.4.0.M3.zip",
+		"addonsUrl": "https://openhab.jfrog.io/openhab/libs-milestone-local/org/openhab/distro/openhab-addons/2.4.0.M3/openhab-addons-2.4.0.M3.kar",
+		"legacyAddonsUrl": "https://openhab.jfrog.io/openhab/libs-milestone-local/org/openhab/distro/openhab-addons-legacy/2.4.0.M3/openhab-addons-legacy-2.4.0.M3.kar",
+		"meta": {
+			"title": "2.4.0 Milestone 3",
+			"category": "milestone",
+			"displayOrder": "9"
+		}
+	},
+	{
+		"version": "2.4.0.M4",
+		"downloadUrl": "https://openhab.jfrog.io/openhab/libs-milestone-local/org/openhab/distro/openhab/2.4.0.M4/openhab-2.4.0.M4.zip",
+		"addonsUrl": "https://openhab.jfrog.io/openhab/libs-milestone-local/org/openhab/distro/openhab-addons/2.4.0.M4/openhab-addons-2.4.0.M4.kar",
+		"legacyAddonsUrl": "https://openhab.jfrog.io/openhab/libs-milestone-local/org/openhab/distro/openhab-addons-legacy/2.4.0.M4/openhab-addons-legacy-2.4.0.M4.kar",
+		"meta": {
+			"title": "2.4.0 Milestone 4",
+			"category": "milestone",
+			"displayOrder": "10"
+		}
+	},
+	{
+		"version": "2.4.0.M5",
+		"downloadUrl": "https://openhab.jfrog.io/openhab/libs-milestone-local/org/openhab/distro/openhab/2.4.0.M5/openhab-2.4.0.M5.zip",
+		"addonsUrl": "https://openhab.jfrog.io/openhab/libs-milestone-local/org/openhab/distro/openhab-addons/2.4.0.M5/openhab-addons-2.4.0.M5.kar",
+		"legacyAddonsUrl": "https://openhab.jfrog.io/openhab/libs-milestone-local/org/openhab/distro/openhab-addons-legacy/2.4.0.M5/openhab-addons-legacy-2.4.0.M5.kar",
+		"meta": {
+			"title": "2.4.0 Milestone 5",
+			"category": "milestone",
+			"displayOrder": "11"
+		}
+	},
+	{
+		"version": "2.4.0.M6",
+		"downloadUrl": "https://openhab.jfrog.io/openhab/libs-milestone-local/org/openhab/distro/openhab/2.4.0.M6/openhab-2.4.0.M6.zip",
+		"addonsUrl": "https://openhab.jfrog.io/openhab/libs-milestone-local/org/openhab/distro/openhab-addons/2.4.0.M6/openhab-addons-2.4.0.M6.kar",
+		"legacyAddonsUrl": "https://openhab.jfrog.io/openhab/libs-milestone-local/org/openhab/distro/openhab-addons-legacy/2.4.0.M6/openhab-addons-legacy-2.4.0.M6.kar",
+		"meta": {
+			"title": "2.4.0 Milestone 6",
+			"category": "milestone",
+			"displayOrder": "12"
+		}
+	},
+	{
+		"version": "2.4.0.M7",
+		"downloadUrl": "https://openhab.jfrog.io/openhab/libs-milestone-local/org/openhab/distro/openhab/2.4.0.M7/openhab-2.4.0.M7.zip",
+		"addonsUrl": "https://openhab.jfrog.io/openhab/libs-milestone-local/org/openhab/distro/openhab-addons/2.4.0.M7/openhab-addons-2.4.0.M7.kar",
+		"legacyAddonsUrl": "https://openhab.jfrog.io/openhab/libs-milestone-local/org/openhab/distro/openhab-addons-legacy/2.4.0.M7/openhab-addons-legacy-2.4.0.M7.kar",
+		"meta": {
+			"title": "2.4.0 Milestone 7",
+			"category": "milestone",
+			"displayOrder": "13"
+		}
+	},
+	{
+		"version": "2.4.0.M8",
+		"downloadUrl": "https://openhab.jfrog.io/openhab/libs-milestone-local/org/openhab/distro/openhab/2.4.0.M8/openhab-2.4.0.M8.zip",
+		"addonsUrl": "https://openhab.jfrog.io/openhab/libs-milestone-local/org/openhab/distro/openhab-addons/2.4.0.M8/openhab-addons-2.4.0.M8.kar",
+		"legacyAddonsUrl": "https://openhab.jfrog.io/openhab/libs-milestone-local/org/openhab/distro/openhab-addons-legacy/2.4.0.M8/openhab-addons-legacy-2.4.0.M8.kar",
+		"meta": {
+			"title": "2.4.0 Milestone 8",
+			"category": "milestone",
+			"displayOrder": "14"
+		}
+	},
+	{
+		"version": "2.4.0.RC1",
+		"downloadUrl": "https://openhab.jfrog.io/openhab/libs-milestone-local/org/openhab/distro/openhab/2.4.0.RC1/openhab-2.4.0.RC1.zip",
+		"addonsUrl": "https://openhab.jfrog.io/openhab/libs-milestone-local/org/openhab/distro/openhab-addons/2.4.0.RC1/openhab-addons-2.4.0.RC1.kar",
+		"legacyAddonsUrl": "https://openhab.jfrog.io/openhab/libs-milestone-local/org/openhab/distro/openhab-addons-legacy/2.4.0.RC1/openhab-addons-legacy-2.4.0.RC1.kar",
+		"meta": {
+			"title": "2.4.0 Release Candidate 1",
+			"category": "milestone",
+			"displayOrder": "15"
+		}
+	},
+	{
+		"version": "2.4.0",
+		"downloadUrl": "https://bintray.com/openhab/mvn/download_file?file_path=org%2Fopenhab%2Fdistro%2Fopenhab%2F2.4.0%2Fopenhab-2.4.0.zip",
+		"addonsUrl": "https://bintray.com/openhab/mvn/download_file?file_path=org%2Fopenhab%2Fdistro%2Fopenhab-addons%2F2.4.0%2Fopenhab-addons-2.4.0.kar",
+		"legacyAddonsUrl": "https://bintray.com/openhab/mvn/download_file?file_path=org%2Fopenhab%2Fdistro%2Fopenhab-addons-legacy%2F2.4.0%2Fopenhab-addons-legacy-2.4.0.kar",
+		"releaseNotesUrl": "https://github.com/openhab/openhab-distro/releases/tag/2.4.0",
+		"meta": {
+			"title": "2.4.0 Stable",
+			"category": "stable",
+			"displayOrder": "16"
+		}
+	},
+	{
+		"version": "2.5.0.M1",
+		"downloadUrl": "https://openhab.jfrog.io/openhab/libs-milestone-local/org/openhab/distro/openhab/2.5.0.M1/openhab-2.5.0.M1.zip",
+		"addonsUrl": "https://openhab.jfrog.io/openhab/libs-milestone-local/org/openhab/distro/openhab-addons/2.5.0.M1/openhab-addons-2.5.0.M1.kar",
+		"legacyAddonsUrl": "https://openhab.jfrog.io/openhab/libs-milestone-local/org/openhab/distro/openhab-addons-legacy/2.5.0.M1/openhab-addons-legacy-2.5.0.M1.kar",
+		"meta": {
+			"title": "2.5.0 Milestone 1",
+			"category": "milestone",
+			"displayOrder": "17"
+		}
+	},
+	{
+		"version": "2.5.0.M2",
+		"downloadUrl": "https://openhab.jfrog.io/openhab/libs-milestone-local/org/openhab/distro/openhab/2.5.0.M2/openhab-2.5.0.M2.zip",
+		"addonsUrl": "https://openhab.jfrog.io/openhab/libs-milestone-local/org/openhab/distro/openhab-addons/2.5.0.M2/openhab-addons-2.5.0.M2.kar",
+		"legacyAddonsUrl": "https://openhab.jfrog.io/openhab/libs-milestone-local/org/openhab/distro/openhab-addons-legacy/2.5.0.M2/openhab-addons-legacy-2.5.0.M2.kar",
+		"meta": {
+			"title": "2.5.0 Milestone 2",
+			"category": "milestone",
+			"displayOrder": "18"
+		}
+	},
+	{
+		"version": "2.5.0.M3",
+		"downloadUrl": "https://openhab.jfrog.io/openhab/libs-milestone-local/org/openhab/distro/openhab/2.5.0.M3/openhab-2.5.0.M3.zip",
+		"addonsUrl": "https://openhab.jfrog.io/openhab/libs-milestone-local/org/openhab/distro/openhab-addons/2.5.0.M3/openhab-addons-2.5.0.M3.kar",
+		"legacyAddonsUrl": "https://openhab.jfrog.io/openhab/libs-milestone-local/org/openhab/distro/openhab-addons-legacy/2.5.0.M3/openhab-addons-legacy-2.5.0.M3.kar",
+		"meta": {
+			"title": "2.5.0 Milestone 3",
+			"category": "milestone",
+			"displayOrder": "19"
+		}
+	},
+	{
+		"version": "2.5.0.M4",
+		"downloadUrl": "https://openhab.jfrog.io/openhab/libs-milestone-local/org/openhab/distro/openhab/2.5.0.M4/openhab-2.5.0.M4.zip",
+		"addonsUrl": "https://openhab.jfrog.io/openhab/libs-milestone-local/org/openhab/distro/openhab-addons/2.5.0.M4/openhab-addons-2.5.0.M4.kar",
+		"legacyAddonsUrl": "https://openhab.jfrog.io/openhab/libs-milestone-local/org/openhab/distro/openhab-addons-legacy/2.5.0.M4/openhab-addons-legacy-2.5.0.M4.kar",
+		"meta": {
+			"title": "2.5.0 Milestone 4",
+			"category": "milestone",
+			"displayOrder": "20"
+		}
+	},
+	{
+		"version": "2.5.0.M5",
+		"downloadUrl": "https://openhab.jfrog.io/openhab/libs-milestone-local/org/openhab/distro/openhab/2.5.0.M5/openhab-2.5.0.M5.zip",
+		"addonsUrl": "https://openhab.jfrog.io/openhab/libs-milestone-local/org/openhab/distro/openhab-addons/2.5.0.M5/openhab-addons-2.5.0.M5.kar",
+		"legacyAddonsUrl": "https://openhab.jfrog.io/openhab/libs-milestone-local/org/openhab/distro/openhab-addons-legacy/2.5.0.M5/openhab-addons-legacy-2.5.0.M5.kar",
+		"meta": {
+			"title": "2.5.0 Milestone 5",
+			"category": "milestone",
+			"displayOrder": "21"
+		}
+	},
+	{
+		"version": "2.5.0.M6",
+		"downloadUrl": "https://openhab.jfrog.io/openhab/libs-milestone-local/org/openhab/distro/openhab/2.5.0.M6/openhab-2.5.0.M6.zip",
+		"addonsUrl": "https://openhab.jfrog.io/openhab/libs-milestone-local/org/openhab/distro/openhab-addons/2.5.0.M6/openhab-addons-2.5.0.M6.kar",
+		"legacyAddonsUrl": "https://openhab.jfrog.io/openhab/libs-milestone-local/org/openhab/distro/openhab-addons-legacy/2.5.0.M6/openhab-addons-legacy-2.5.0.M6.kar",
+		"meta": {
+			"title": "2.5.0 Milestone 6",
+			"category": "milestone",
+			"displayOrder": "22"
+		}
+	},
+	{
+		"version": "2.5.0.RC1",
+		"downloadUrl": "https://openhab.jfrog.io/openhab/libs-milestone-local/org/openhab/distro/openhab/2.5.0.RC1/openhab-2.5.0.RC1.zip",
+		"addonsUrl": "https://openhab.jfrog.io/openhab/libs-milestone-local/org/openhab/distro/openhab-addons/2.5.0.RC1/openhab-addons-2.5.0.RC1.kar",
+		"legacyAddonsUrl": "https://openhab.jfrog.io/openhab/libs-milestone-local/org/openhab/distro/openhab-addons-legacy/2.5.0.RC1/openhab-addons-legacy-2.5.0.RC1.kar",
+		"meta": {
+			"title": "2.5.0 Release Candidate 1",
+			"category": "milestone",
+			"displayOrder": "23"
+		}
+	},
+	{
+		"version": "2.5.0",
+		"downloadUrl": "https://bintray.com/openhab/mvn/download_file?file_path=org%2Fopenhab%2Fdistro%2Fopenhab%2F2.5.0%2Fopenhab-2.5.0.zip",
+		"addonsUrl": "https://bintray.com/openhab/mvn/download_file?file_path=org%2Fopenhab%2Fdistro%2Fopenhab-addons%2F2.5.0%2Fopenhab-addons-2.5.0.kar",
+		"legacyAddonsUrl": "https://bintray.com/openhab/mvn/download_file?file_path=org%2Fopenhab%2Fdistro%2Fopenhab-addons-legacy%2F2.5.0%2Fopenhab-addons-legacy-2.5.0.kar",
+		"releaseNotesUrl": "https://github.com/openhab/openhab-distro/releases/tag/2.5.0",
+		"meta": {
+			"title": "2.5.0 Stable",
+			"category": "stable",
+			"displayOrder": "24"
+		}
+	},
+	{
+		"version": "2.5.1",
+		"downloadUrl": "https://bintray.com/openhab/mvn/download_file?file_path=org%2Fopenhab%2Fdistro%2Fopenhab%2F2.5.1%2Fopenhab-2.5.1.zip",
+		"addonsUrl": "https://bintray.com/openhab/mvn/download_file?file_path=org%2Fopenhab%2Fdistro%2Fopenhab-addons%2F2.5.1%2Fopenhab-addons-2.5.1.kar",
+		"legacyAddonsUrl": "https://bintray.com/openhab/mvn/download_file?file_path=org%2Fopenhab%2Fdistro%2Fopenhab-addons-legacy%2F2.5.1%2Fopenhab-addons-legacy-2.5.1.kar",
+		"releaseNotesUrl": "https://github.com/openhab/openhab-distro/releases/tag/2.5.1",
+		"meta": {
+			"title": "2.5.1 Stable",
+			"category": "stable",
+			"displayOrder": "25"
+		}
+	},
+	{
+		"version": "2.5.2",
+		"downloadUrl": "https://bintray.com/openhab/mvn/download_file?file_path=org%2Fopenhab%2Fdistro%2Fopenhab%2F2.5.2%2Fopenhab-2.5.2.zip",
+		"addonsUrl": "https://bintray.com/openhab/mvn/download_file?file_path=org%2Fopenhab%2Fdistro%2Fopenhab-addons%2F2.5.2%2Fopenhab-addons-2.5.2.kar",
+		"legacyAddonsUrl": "https://bintray.com/openhab/mvn/download_file?file_path=org%2Fopenhab%2Fdistro%2Fopenhab-addons-legacy%2F2.5.2%2Fopenhab-addons-legacy-2.5.2.kar",
+		"releaseNotesUrl": "https://github.com/openhab/openhab-distro/releases/tag/2.5.2",
+		"meta": {
+			"title": "2.5.2 Stable",
+			"category": "stable",
+			"displayOrder": "26"
+		}
+	},
+	{
+		"version": "2.5.3",
+		"downloadUrl": "https://bintray.com/openhab/mvn/download_file?file_path=org%2Fopenhab%2Fdistro%2Fopenhab%2F2.5.3%2Fopenhab-2.5.3.zip",
+		"addonsUrl": "https://bintray.com/openhab/mvn/download_file?file_path=org%2Fopenhab%2Fdistro%2Fopenhab-addons%2F2.5.3%2Fopenhab-addons-2.5.3.kar",
+		"legacyAddonsUrl": "https://bintray.com/openhab/mvn/download_file?file_path=org%2Fopenhab%2Fdistro%2Fopenhab-addons-legacy%2F2.5.3%2Fopenhab-addons-legacy-2.5.3.kar",
+		"releaseNotesUrl": "https://github.com/openhab/openhab-distro/releases/tag/2.5.3",
+		"meta": {
+			"title": "2.5.3 Stable",
+			"category": "stable",
+			"displayOrder": "27"
+		}
+	},
+	{
+		"version": "2.5.4",
+		"downloadUrl": "https://bintray.com/openhab/mvn/download_file?file_path=org%2Fopenhab%2Fdistro%2Fopenhab%2F2.5.4%2Fopenhab-2.5.4.zip",
+		"addonsUrl": "https://bintray.com/openhab/mvn/download_file?file_path=org%2Fopenhab%2Fdistro%2Fopenhab-addons%2F2.5.4%2Fopenhab-addons-2.5.4.kar",
+		"legacyAddonsUrl": "https://bintray.com/openhab/mvn/download_file?file_path=org%2Fopenhab%2Fdistro%2Fopenhab-addons-legacy%2F2.5.4%2Fopenhab-addons-legacy-2.5.4.kar",
+		"releaseNotesUrl": "https://github.com/openhab/openhab-distro/releases/tag/2.5.4",
+		"meta": {
+			"title": "2.5.4 Stable",
+			"category": "stable",
+			"displayOrder": "28"
+		}
+	},
+	{
+		"version": "2.5.5",
+		"downloadUrl": "https://bintray.com/openhab/mvn/download_file?file_path=org%2Fopenhab%2Fdistro%2Fopenhab%2F2.5.5%2Fopenhab-2.5.5.zip",
+		"addonsUrl": "https://bintray.com/openhab/mvn/download_file?file_path=org%2Fopenhab%2Fdistro%2Fopenhab-addons%2F2.5.5%2Fopenhab-addons-2.5.5.kar",
+		"legacyAddonsUrl": "https://bintray.com/openhab/mvn/download_file?file_path=org%2Fopenhab%2Fdistro%2Fopenhab-addons-legacy%2F2.5.5%2Fopenhab-addons-legacy-2.5.5.kar",
+		"releaseNotesUrl": "https://github.com/openhab/openhab-distro/releases/tag/2.5.5",
+		"meta": {
+			"title": "2.5.5 Stable",
+			"category": "stable",
+			"displayOrder": "29"
+		}
+	},
+	{
+		"version": "2.5.6",
+		"downloadUrl": "https://bintray.com/openhab/mvn/download_file?file_path=org%2Fopenhab%2Fdistro%2Fopenhab%2F2.5.6%2Fopenhab-2.5.6.zip",
+		"addonsUrl": "https://bintray.com/openhab/mvn/download_file?file_path=org%2Fopenhab%2Fdistro%2Fopenhab-addons%2F2.5.6%2Fopenhab-addons-2.5.6.kar",
+		"legacyAddonsUrl": "https://bintray.com/openhab/mvn/download_file?file_path=org%2Fopenhab%2Fdistro%2Fopenhab-addons-legacy%2F2.5.6%2Fopenhab-addons-legacy-2.5.6.kar",
+		"releaseNotesUrl": "https://github.com/openhab/openhab-distro/releases/tag/2.5.6",
+		"meta": {
+			"title": "2.5.6 Stable",
+			"category": "stable",
+			"displayOrder": "30"
+		}
+	},
+	{
+		"version": "2.5.7",
+		"downloadUrl": "https://bintray.com/openhab/mvn/download_file?file_path=org%2Fopenhab%2Fdistro%2Fopenhab%2F2.5.7%2Fopenhab-2.5.7.zip",
+		"addonsUrl": "https://bintray.com/openhab/mvn/download_file?file_path=org%2Fopenhab%2Fdistro%2Fopenhab-addons%2F2.5.7%2Fopenhab-addons-2.5.7.kar",
+		"legacyAddonsUrl": "https://bintray.com/openhab/mvn/download_file?file_path=org%2Fopenhab%2Fdistro%2Fopenhab-addons-legacy%2F2.5.7%2Fopenhab-addons-legacy-2.5.7.kar",
+		"releaseNotesUrl": "https://github.com/openhab/openhab-distro/releases/tag/2.5.7",
+		"meta": {
+			"title": "2.5.7 Stable",
+			"category": "stable",
+			"displayOrder": "31"
+		}
+	},
+	{
+		"version": "2.5.8",
+		"downloadUrl": "https://bintray.com/openhab/mvn/download_file?file_path=org%2Fopenhab%2Fdistro%2Fopenhab%2F2.5.8%2Fopenhab-2.5.8.zip",
+		"addonsUrl": "https://bintray.com/openhab/mvn/download_file?file_path=org%2Fopenhab%2Fdistro%2Fopenhab-addons%2F2.5.8%2Fopenhab-addons-2.5.8.kar",
+		"legacyAddonsUrl": "https://bintray.com/openhab/mvn/download_file?file_path=org%2Fopenhab%2Fdistro%2Fopenhab-addons-legacy%2F2.5.8%2Fopenhab-addons-legacy-2.5.8.kar",
+		"releaseNotesUrl": "https://github.com/openhab/openhab-distro/releases/tag/2.5.8",
+		"meta": {
+			"title": "2.5.8 Stable",
+			"category": "stable",
+			"displayOrder": "32"
+		}
+	},
+	{
+		"version": "2.5.9",
+		"downloadUrl": "https://bintray.com/openhab/mvn/download_file?file_path=org%2Fopenhab%2Fdistro%2Fopenhab%2F2.5.9%2Fopenhab-2.5.9.zip",
+		"addonsUrl": "https://bintray.com/openhab/mvn/download_file?file_path=org%2Fopenhab%2Fdistro%2Fopenhab-addons%2F2.5.9%2Fopenhab-addons-2.5.9.kar",
+		"legacyAddonsUrl": "https://bintray.com/openhab/mvn/download_file?file_path=org%2Fopenhab%2Fdistro%2Fopenhab-addons-legacy%2F2.5.9%2Fopenhab-addons-legacy-2.5.9.kar",
+		"releaseNotesUrl": "https://github.com/openhab/openhab-distro/releases/tag/2.5.9",
+		"meta": {
+			"title": "2.5.9 Stable",
+			"category": "stable",
+			"displayOrder": "33"
+		}
+	},
+	{
+		"version": "2.5.10",
+		"downloadUrl": "https://bintray.com/openhab/mvn/download_file?file_path=org%2Fopenhab%2Fdistro%2Fopenhab%2F2.5.10%2Fopenhab-2.5.10.zip",
+		"addonsUrl": "https://bintray.com/openhab/mvn/download_file?file_path=org%2Fopenhab%2Fdistro%2Fopenhab-addons%2F2.5.10%2Fopenhab-addons-2.5.10.kar",
+		"legacyAddonsUrl": "https://bintray.com/openhab/mvn/download_file?file_path=org%2Fopenhab%2Fdistro%2Fopenhab-addons-legacy%2F2.5.10%2Fopenhab-addons-legacy-2.5.10.kar",
+		"releaseNotesUrl": "https://github.com/openhab/openhab-distro/releases/tag/2.5.10",
+		"meta": {
+			"title": "2.5.10 Stable",
+			"category": "stable",
+			"displayOrder": "34"
+		}
+	},
+	{
+		"version": "2.5.11",
+		"downloadUrl": "https://bintray.com/openhab/mvn/download_file?file_path=org%2Fopenhab%2Fdistro%2Fopenhab%2F2.5.11%2Fopenhab-2.5.11.zip",
+		"addonsUrl": "https://bintray.com/openhab/mvn/download_file?file_path=org%2Fopenhab%2Fdistro%2Fopenhab-addons%2F2.5.11%2Fopenhab-addons-2.5.11.kar",
+		"legacyAddonsUrl": "https://bintray.com/openhab/mvn/download_file?file_path=org%2Fopenhab%2Fdistro%2Fopenhab-addons-legacy%2F2.5.11%2Fopenhab-addons-legacy-2.5.11.kar",
+		"releaseNotesUrl": "https://github.com/openhab/openhab-distro/releases/tag/2.5.11",
+		"meta": {
+			"title": "2.5.11 Stable",
+			"category": "stable",
+			"displayOrder": "35"
+		}
+	},
+	{
+		"version": "2.5.12",
+		"downloadUrl": "https://bintray.com/openhab/mvn/download_file?file_path=org%2Fopenhab%2Fdistro%2Fopenhab%2F2.5.12%2Fopenhab-2.5.12.zip",
+		"addonsUrl": "https://bintray.com/openhab/mvn/download_file?file_path=org%2Fopenhab%2Fdistro%2Fopenhab-addons%2F2.5.12%2Fopenhab-addons-2.5.12.kar",
+		"legacyAddonsUrl": "https://bintray.com/openhab/mvn/download_file?file_path=org%2Fopenhab%2Fdistro%2Fopenhab-addons-legacy%2F2.5.12%2Fopenhab-addons-legacy-2.5.12.kar",
+		"releaseNotesUrl": "https://github.com/openhab/openhab-distro/releases/tag/2.5.12",
+		"meta": {
+			"title": "2.5.12 Stable",
+			"category": "stable",
+			"displayOrder": "36"
+		}
+	},
+	{
+		"version": "2.5.13-SNAPSHOT",
+		"downloadUrl": "https://ci.openhab.org/job/openHAB-Distribution/lastSuccessfulBuild/artifact/distributions/openhab/target/openhab-2.5.13-SNAPSHOT.zip",
+		"addonsUrl": "https://ci.openhab.org/job/openHAB-Distribution/lastSuccessfulBuild/artifact/distributions/openhab-addons/target/openhab-addons-2.5.13-SNAPSHOT.kar",
+		"legacyAddonsUrl": "https://ci.openhab.org/job/openHAB-Distribution/lastSuccessfulBuild/artifact/distributions/openhab-addons-legacy/target/openhab-addons-legacy-2.5.13-SNAPSHOT.kar",
+		"meta": {
+			"title": "2.5.13 Snapshot",
+			"category": "snapshot",
+			"displayOrder": "37"
+		}
+	},
+	{
+		"version": "3.0.0.M1",
+		"downloadUrl": "https://openhab.jfrog.io/openhab/libs-milestone-local/org/openhab/distro/openhab/3.0.0.M1/openhab-3.0.0.M1.zip",
+		"addonsUrl": "https://openhab.jfrog.io/openhab/libs-milestone-local/org/openhab/distro/openhab-addons/3.0.0.M1/openhab-addons-3.0.0.M1.kar",
+		"releaseNotesUrl": "https://github.com/openhab/openhab-distro/releases/tag/3.0.0.M1",
+		"meta": {
+			"title": "3.0.0 Milestone 1",
+			"category": "milestone",
+			"displayOrder": "38"
+		}
+	},
+	{
+		"version": "3.0.0.M2",
+		"downloadUrl": "https://openhab.jfrog.io/openhab/libs-milestone-local/org/openhab/distro/openhab/3.0.0.M2/openhab-3.0.0.M2.zip",
+		"addonsUrl": "https://openhab.jfrog.io/openhab/libs-milestone-local/org/openhab/distro/openhab-addons/3.0.0.M2/openhab-addons-3.0.0.M2.kar",
+		"releaseNotesUrl": "https://github.com/openhab/openhab-distro/releases/tag/3.0.0.M2",
+		"meta": {
+			"title": "3.0.0 Milestone 2",
+			"category": "milestone",
+			"displayOrder": "39"
+		}
+	},
+	{
+		"version": "3.0.0.M3",
+		"downloadUrl": "https://openhab.jfrog.io/openhab/libs-milestone-local/org/openhab/distro/openhab/3.0.0.M3/openhab-3.0.0.M3.zip",
+		"addonsUrl": "https://openhab.jfrog.io/openhab/libs-milestone-local/org/openhab/distro/openhab-addons/3.0.0.M3/openhab-addons-3.0.0.M3.kar",
+		"releaseNotesUrl": "https://github.com/openhab/openhab-distro/releases/tag/3.0.0.M3",
+		"meta": {
+			"title": "3.0.0 Milestone 3",
+			"category": "milestone",
+			"displayOrder": "40"
+		}
+	},
+	{
+		"version": "3.0.0.M4",
+		"downloadUrl": "https://openhab.jfrog.io/openhab/libs-milestone-local/org/openhab/distro/openhab/3.0.0.M4/openhab-3.0.0.M4.zip",
+		"addonsUrl": "https://openhab.jfrog.io/openhab/libs-milestone-local/org/openhab/distro/openhab-addons/3.0.0.M4/openhab-addons-3.0.0.M4.kar",
+		"releaseNotesUrl": "https://github.com/openhab/openhab-distro/releases/tag/3.0.0.M4",
+		"meta": {
+			"title": "3.0.0 Milestone 4",
+			"category": "milestone",
+			"displayOrder": "41"
+		}
+	},
+	{
+		"version": "3.0.0.M5",
+		"downloadUrl": "https://openhab.jfrog.io/openhab/libs-milestone-local/org/openhab/distro/openhab/3.0.0.M5/openhab-3.0.0.M5.zip",
+		"addonsUrl": "https://openhab.jfrog.io/openhab/libs-milestone-local/org/openhab/distro/openhab-addons/3.0.0.M5/openhab-addons-3.0.0.M5.kar",
+		"releaseNotesUrl": "https://github.com/openhab/openhab-distro/releases/tag/3.0.0.M5",
+		"meta": {
+			"title": "3.0.0 Milestone 5",
+			"category": "milestone",
+			"displayOrder": "42"
+		}
+	},
+	{
+		"version": "3.0.0.RC1",
+		"downloadUrl": "https://openhab.jfrog.io/openhab/libs-milestone-local/org/openhab/distro/openhab/3.0.0.RC1/openhab-3.0.0.RC1.zip",
+		"addonsUrl": "https://openhab.jfrog.io/openhab/libs-milestone-local/org/openhab/distro/openhab-addons/3.0.0.RC1/openhab-addons-3.0.0.RC1.kar",
+		"releaseNotesUrl": "https://github.com/openhab/openhab-distro/releases/tag/3.0.0.RC1",
+		"meta": {
+			"title": "3.0.0 Release Candidate 1",
+			"category": "milestone",
+			"displayOrder": "43"
+		}
+	},
+	{
+		"version": "3.0.0.RC2",
+		"downloadUrl": "https://openhab.jfrog.io/openhab/libs-milestone-local/org/openhab/distro/openhab/3.0.0.RC2/openhab-3.0.0.RC2.zip",
+		"addonsUrl": "https://openhab.jfrog.io/openhab/libs-milestone-local/org/openhab/distro/openhab-addons/3.0.0.RC2/openhab-addons-3.0.0.RC2.kar",
+		"releaseNotesUrl": "https://github.com/openhab/openhab-distro/releases/tag/3.0.0.RC2",
+		"meta": {
+			"title": "3.0.0 Release Candidate 2",
+			"category": "milestone",
+			"displayOrder": "44"
+		}
+	},
+	{
+		"version": "3.0.0",
+		"downloadUrl": "https://bintray.com/openhab/mvn/download_file?file_path=org%2Fopenhab%2Fdistro%2Fopenhab%2F3.0.0%2Fopenhab-3.0.0.zip",
+		"addonsUrl": "https://bintray.com/openhab/mvn/download_file?file_path=org%2Fopenhab%2Fdistro%2Fopenhab-addons%2F3.0.0%2Fopenhab-addons-3.0.0.kar",
+		"releaseNotesUrl": "https://github.com/openhab/openhab-distro/releases/tag/3.0.0",
+		"meta": {
+			"title": "3.0.0 Stable",
+			"category": "stable",
+			"displayOrder": "45"
+		}
+	},
+	{
+		"version": "3.0.1",
+		"downloadUrl": "https://bintray.com/openhab/mvn/download_file?file_path=org%2Fopenhab%2Fdistro%2Fopenhab%2F3.0.1%2Fopenhab-3.0.1.zip",
+		"addonsUrl": "https://bintray.com/openhab/mvn/download_file?file_path=org%2Fopenhab%2Fdistro%2Fopenhab-addons%2F3.0.1%2Fopenhab-addons-3.0.1.kar",
+		"releaseNotesUrl": "https://github.com/openhab/openhab-distro/releases/tag/3.0.1",
+		"meta": {
+			"title": "3.0.1 Stable",
+			"category": "stable",
+			"displayOrder": "46"
+		}
+	},
+	{
+		"version": "3.0.2",
+		"downloadUrl": "https://bintray.com/openhab/mvn/download_file?file_path=org%2Fopenhab%2Fdistro%2Fopenhab%2F3.0.2%2Fopenhab-3.0.2.zip",
+		"addonsUrl": "https://bintray.com/openhab/mvn/download_file?file_path=org%2Fopenhab%2Fdistro%2Fopenhab-addons%2F3.0.2%2Fopenhab-addons-3.0.2.kar",
+		"releaseNotesUrl": "https://github.com/openhab/openhab-distro/releases/tag/3.0.2",
+		"meta": {
+			"title": "3.0.2 Stable",
+			"category": "stable",
+			"displayOrder": "47"
+		}
+	},
+	{
+		"version": "3.1.0.M1",
+		"downloadUrl": "https://openhab.jfrog.io/openhab/libs-milestone-local/org/openhab/distro/openhab/3.1.0.M1/openhab-3.1.0.M1.zip",
+		"addonsUrl": "https://openhab.jfrog.io/openhab/libs-milestone-local/org/openhab/distro/openhab-addons/3.1.0.M1/openhab-addons-3.1.0.M1.kar",
+		"releaseNotesUrl": "https://github.com/openhab/openhab-distro/releases/tag/3.1.0.M1",
+		"meta": {
+			"title": "3.1.0 Milestone 1",
+			"category": "milestone",
+			"displayOrder": "48"
+		}
+	},
+	{
+		"version": "3.1.0.M2",
+		"downloadUrl": "https://openhab.jfrog.io/openhab/libs-milestone-local/org/openhab/distro/openhab/3.1.0.M2/openhab-3.1.0.M2.zip",
+		"addonsUrl": "https://openhab.jfrog.io/openhab/libs-milestone-local/org/openhab/distro/openhab-addons/3.1.0.M2/openhab-addons-3.1.0.M2.kar",
+		"releaseNotesUrl": "https://github.com/openhab/openhab-distro/releases/tag/3.1.0.M2",
+		"meta": {
+			"title": "3.1.0 Milestone 2",
+			"category": "milestone",
+			"displayOrder": "49"
+		}
+	},
+	{
+		"version": "3.1.0.M3",
+		"downloadUrl": "https://openhab.jfrog.io/openhab/libs-milestone-local/org/openhab/distro/openhab/3.1.0.M3/openhab-3.1.0.M3.zip",
+		"addonsUrl": "https://openhab.jfrog.io/openhab/libs-milestone-local/org/openhab/distro/openhab-addons/3.1.0.M3/openhab-addons-3.1.0.M3.kar",
+		"releaseNotesUrl": "https://github.com/openhab/openhab-distro/releases/tag/3.1.0.M3",
+		"meta": {
+			"title": "3.1.0 Milestone 3",
+			"category": "milestone",
+			"displayOrder": "50"
+		}
+	},
+	{
+		"version": "3.1.0.M4",
+		"downloadUrl": "https://openhab.jfrog.io/openhab/libs-milestone-local/org/openhab/distro/openhab/3.1.0.M4/openhab-3.1.0.M4.zip",
+		"addonsUrl": "https://openhab.jfrog.io/openhab/libs-milestone-local/org/openhab/distro/openhab-addons/3.1.0.M4/openhab-addons-3.1.0.M4.kar",
+		"releaseNotesUrl": "https://github.com/openhab/openhab-distro/releases/tag/3.1.0.M4",
+		"meta": {
+			"title": "3.1.0 Milestone 4",
+			"category": "milestone",
+			"displayOrder": "51"
+		}
+	},
+	{
+		"version": "3.1.0.M5",
+		"downloadUrl": "https://openhab.jfrog.io/openhab/libs-milestone-local/org/openhab/distro/openhab/3.1.0.M5/openhab-3.1.0.M5.zip",
+		"addonsUrl": "https://openhab.jfrog.io/openhab/libs-milestone-local/org/openhab/distro/openhab-addons/3.1.0.M5/openhab-addons-3.1.0.M5.kar",
+		"releaseNotesUrl": "https://github.com/openhab/openhab-distro/releases/tag/3.1.0.M5",
+		"meta": {
+			"title": "3.1.0 Milestone 5",
+			"category": "milestone",
+			"displayOrder": "52"
+		}
+	},
+	{
+		"version": "3.1.0.RC1",
+		"downloadUrl": "https://openhab.jfrog.io/openhab/libs-milestone-local/org/openhab/distro/openhab/3.1.0.RC1/openhab-3.1.0.RC1.zip",
+		"addonsUrl": "https://openhab.jfrog.io/openhab/libs-milestone-local/org/openhab/distro/openhab-addons/3.1.0.RC1/openhab-addons-3.1.0.RC1.kar",
+		"releaseNotesUrl": "https://github.com/openhab/openhab-distro/releases/tag/3.1.0.RC1",
+		"meta": {
+			"title": "3.1.0 Release Candidate 1",
+			"category": "milestone",
+			"displayOrder": "53"
+		}
+	},
+	{
+		"version": "3.1.0",
+		"downloadUrl": "https://bintray.com/openhab/mvn/download_file?file_path=org%2Fopenhab%2Fdistro%2Fopenhab%2F3.1.0%2Fopenhab-3.1.0.zip",
+		"addonsUrl": "https://bintray.com/openhab/mvn/download_file?file_path=org%2Fopenhab%2Fdistro%2Fopenhab-addons%2F3.1.0%2Fopenhab-addons-3.1.0.kar",
+		"releaseNotesUrl": "https://github.com/openhab/openhab-distro/releases/tag/3.1.0",
+		"meta": {
+			"default": true,
+			"title": "3.1.0 Stable",
+			"category": "stable",
+			"displayOrder": "54"
+		}
+	},
+	{
+		"version": "3.2.0.M1",
+		"downloadUrl": "https://openhab.jfrog.io/openhab/libs-milestone-local/org/openhab/distro/openhab/3.2.0.M1/openhab-3.2.0.M1.zip",
+		"addonsUrl": "https://openhab.jfrog.io/openhab/libs-milestone-local/org/openhab/distro/openhab-addons/3.2.0.M1/openhab-addons-3.2.0.M1.kar",
+		"releaseNotesUrl": "https://github.com/openhab/openhab-distro/releases/tag/3.2.0.M1",
+		"meta": {
+			"title": "3.2.0 Milestone 1",
+			"category": "milestone",
+			"displayOrder": "55"
+		}
+	},
+	{
+		"version": "3.2.0.M2",
+		"downloadUrl": "https://openhab.jfrog.io/openhab/libs-milestone-local/org/openhab/distro/openhab/3.2.0.M2/openhab-3.2.0.M2.zip",
+		"addonsUrl": "https://openhab.jfrog.io/openhab/libs-milestone-local/org/openhab/distro/openhab-addons/3.2.0.M2/openhab-addons-3.2.0.M2.kar",
+		"releaseNotesUrl": "https://github.com/openhab/openhab-distro/releases/tag/3.2.0.M2",
+		"meta": {
+			"title": "3.2.0 Milestone 2",
+			"category": "milestone",
+			"displayOrder": "56"
+		}
+	},
+	{
+		"version": "3.2.0-SNAPSHOT",
+		"downloadUrl": "https://ci.openhab.org/job/openHAB3-Distribution/lastSuccessfulBuild/artifact/distributions/openhab/target/openhab-3.2.0-SNAPSHOT.zip",
+		"addonsUrl": "https://ci.openhab.org/job/openHAB3-Distribution/lastSuccessfulBuild/artifact/distributions/openhab-addons/target/openhab-addons-3.2.0-SNAPSHOT.kar",
+		"meta": {
+			"title": "3.2.0 Snapshot",
+			"category": "snapshot",
+			"displayOrder": "57"
+		}
+	}
+]
